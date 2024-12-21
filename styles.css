@@ -1,0 +1,136 @@
+*{/*Este aqui ponemos un ancho y lorgo por defecto*/
+    margin: 0;
+    padding: 0;
+}
+.Logo{
+    text-align: left;/*Diseño del Logo de la pagina*/
+   
+}
+.titulo{ /* Diseño para el titulo de la pagina*/
+    text-align: center;
+    color: rgb(215, 230, 83);
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 6px;
+}
+.dire{
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+.map{/* Espacio donde nos ubicamos con el mapa de Google Map*/
+    margin: 15px;
+    
+}
+.ubicacion{
+    padding: 3px;
+}
+.video{
+    margin-right: 20px;
+}
+.video-repuesto {
+    width: 100%; /* El video ocupará todo el ancho del contenedor */
+    padding: auto;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+button{
+    margin: 10px;
+    padding: 10px;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 10px;
+    border-color: red;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+
+    background-color: green;
+    cursor: pointer;
+    border-color: green;
+    
+}
+
+/* Sección de publicidad/servicios */
+.publicidad {
+    display: flex; /* Usa el modelo flexbox para los elementos hijos */
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+    overflow-y: hidden; /* Desactiva el desplazamiento vertical */
+    width: 100%; /* Hace que el contenedor ocupe el ancho completo */
+    padding: 10px; /* Espaciado interno */
+    gap: 20px; /* Espacio entre los elementos */
+}
+.publicidad > div {
+    background-color: #c9b9b9;
+    padding: 100px;
+    width: 30%;
+    scroll-padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 8px; /* Separación entre los contenedores */
+}
+
+.publicidad > div {
+    background-color: #ffffff;
+    padding: 80px;
+    width: 30%;
+    scroll-padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px; /* Separación entre los contenedores */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Transición para el efecto */
+}
+
+.publicidad > div:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del contenedor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más grande */
+    background-color: #ffffff; /* Cambio de color de fondo */
+}
+
+
+.viajes, .estacionamiento, .repuestos  {
+    width: 30%; /* Cada contenedor ocupa el 30% del ancho */
+    box-sizing: border-box;
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    background-color: #f4f4f4; /* Un color de fondo suave para visualización */
+    padding: 20px;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que las imágenes no se desborden */
+}
+
+/* Ajustar imágenes */
+.image {
+    width: 100%; /* Hace que la imagen ocupe el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen se cubra bien dentro del contenedor */
+    border-radius: 8px;
+}
+
+footer{
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    text-align: center
+}
+
+/* Media query para dispositivos pequeños */
+@media (max-width: 768px) {
+    .publicidad {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .publicidad > div {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
